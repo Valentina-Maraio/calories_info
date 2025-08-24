@@ -18,6 +18,7 @@ defmodule CaloriesWeb.Router do
 
   scope "/api", CaloriesWeb do
     pipe_through :api
+    options "/estimate-calories", CalorieCountroller, :options
     post "/estimate-calories", CalorieController, :estimate
   end
 end
