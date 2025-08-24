@@ -93,7 +93,7 @@ config :openai,
   http_options: [recv_timeout: 30_000]
 
 config :cors_plug,
-  origin: ["http://localhost:3000"],
+  origin: ["http://localhost:3000", "http://localhost:4000", "http://localhost:5173"],
   max_age: 86400,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
 
